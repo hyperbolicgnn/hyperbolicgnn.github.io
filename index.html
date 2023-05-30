@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>HGRL Tutorial @ ECML-PKDD2022</title>
+    <title>HGNN Tutorial @ SIGKDD 2023</title>
 
     <!-- favicon 
     <link href="favicon.png" rel=icon>-->
@@ -75,24 +75,10 @@
 
     <div class="jumbotron text-center">
         <div class="content">
-            <h1>Hyperbolic Graph Representation Learning: A Tutorial</h1>
-	   <!-- <h2 style="color:#FFFFFF;"><b>Keywords: DNNs, DRL, GNNs, AutoML, Adversarial Attacks, Trustworthy Recommendations</b> </h2>>
-	   <!-- <h2 style="color:#FFFFFF;"><b>Aug 20 20:00 – 2:00 (Next day) Montreal Time (UTC-4) </b> </h2>>
-            <!--<div class="event-date">9:00 - 11:45 PM, April 16, 2021 (EST time)</div>-->
-	     <!--
-	    <h2 style="color:#FFFFFF;"><b>Zoom Link:  <a href="https://zoom.virtualchair.net/ijcai9/V9zt6w">https://zoom.virtualchair.net/ijcai9/V9zt6w </a ></b> </h2>
+            <h1>Hyperbolic Graph Neural Networks: A Tutorial on Methods and Applications</h1>
 
-		<h2 style="color:#FFFFFF;"><b>Introduction</b> </h2>
-	    <h2 style="color:#FFFFFF;"><b>Fundamentals of Deep Recommender Systems</b> </h2>
-	    <h2 style="color:#FFFFFF;"><b>Reinforcement Learning for Recommender Systems</b> </h2>
-	    <h2 style="color:#FFFFFF;"><b>Graph Neural Network for Recommendations</b> </h2>
-	    <h2 style="color:#FFFFFF;"><b>Automated Machine Learning for Recommender Systems</b>  </h2>
-            <h2 style="color:#FFFFFF;"><b>Adversarial Attacks for Recommender Systems </b>  </h2>
-	    -->
-	    <!--<h2 style="color:#0F1555;"><b><a href="https://msu.zoom.us/j/94465359383">Zoom Link to Tutorial</a></b></h2>-->
-            <!--<div class="event-date">Summit 1 - Ground Level, Egan, Anchorage, Alaska - USA</div>
-            <!--<p class="lead">It's a tag line, where you can write a key point of your idea. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-            <button type="button" class="btn btn-default btn-lg">STAY IN THE LOOP</button>-->
+            <h1>in KDD 2023, Long Beach, USA, August, 2023</h1>
+            
         </div>
     </div>
     <!-- .Jumbotron-->
@@ -102,20 +88,35 @@
     <section id="section-intro" class="section-wrapper about-event">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-10 text-center">
                     <h1>Overview</h1>
                 </div>
             </div>
             <div class="row text-justify">
-                <div class="col-md-12">
+                <div class="col-md-10">
                    
 			<p class="large text-muted">
-			   Graph-structured data are widespread in the real-world applications, such as social networks, recommender systems, knowledge graphs, chemical molecules etc. Despite the success of Euclidean space for graph-related learning tasks, its ability to model complex patterns is essentially constrained by its polynomially growing capacity. Recently, hyperbolic spaces have emerged as a promising alternative for processing graph data with tree-like structure or power-law distribution, owing to its exponential growth property.  Different from the Euclidean space which expands polynomially, the hyperbolic space grows exponentially which makes it gains natural advantages in abstracting tree-like or scale-free graphs with hierarchical organizations.     
+                Graph Neural Networks (GNNs) generalize conventional neural networks to graph-structured data and 
+                have received considerable attention owing to their impressive performance. 
+                In spite of the notable successes, the performance of Euclidean models is inherently bounded and limited by the representation ability of Euclidean geometry, 
+                especially when it comes to datasets with highly non-Euclidean latent anatomy. Recently, hyperbolic spaces have emerged as a promising alternative for processing 
+                graph data with tree-like structure or power-law distribution and a surge of works on either methods or novel applications have been seen.  Unlike Euclidean space, 
+                which expands polynomially, hyperbolic space grows exponentially with its radius, making it more suitable for modeling complex real-world data. 
+                 Hence, it gains natural advantages in abstracting  tree-like graphs with a hierarchical organization or power-law distribution.
+    
+			   <!-- Graph-structured data are widespread in the real-world applications, such as social networks, recommender systems, knowledge graphs, chemical molecules etc. Despite the success of Euclidean space for graph-related learning tasks, its ability to model complex patterns is essentially constrained by its polynomially growing capacity. Recently, hyperbolic spaces have emerged as a promising alternative for processing graph data with tree-like structure or power-law distribution, owing to its exponential growth property.  Different from the Euclidean space which expands polynomially, the hyperbolic space grows exponentially which makes it gains natural advantages in abstracting tree-like or scale-free graphs with hierarchical organizations.      -->
 			</p>
                     
 		<p class="large text-muted">
-			
-In this tutorial, we will give an introduction to this emerging field in graph representation learning, with the express purpose of being accessible to all audiences. We first give a brief introduction to graph representation learning as well as some preliminary Riemannian and hyperbolic geometry. We then will comprehensively revisit the hyperbolic embedding techniques including hyperbolic shallow models and hyperbolic neural networks. In addition, we will give the technical details of the current hyperbolic graph neural networks, by unifying them into a general framework and summarizing the variants of each component. Moreover, we will introduce a series of related applications in a variety of fields. In the last part, we will discuss several advanced topics about hyperbolic geometry for graph representation learning, which potentially serve as guidelines for further flourishing the non-Euclidean graph learning community.			
+			To support the burgeoning interest in Hyperbolic Graph Neural Networks (HGNNs), the primary goal of this tutorial is to give a systematical review of the methods, 
+            applications, and challenges in this fast-growing and vibrant area, with the express purpose of being accessible to all audiences.
+            More specifically, we will first give a brief introduction to graph neural networks as well as some preliminary of  Riemannian manifold and hyperbolic geometry. 
+            We then will comprehensively revisit the technical details of the developed HGNNs, by unifying them into a general framework and summarizing the variants of each component. 
+            Besides, we will introduce applications deployed in a variety of fields. 
+            Finally, we will discuss several challenges and present the potential solutions to address them, including some initial attempts of our own, which potentially paves the path for the further flourishing of the research community. 
+            A related GitHub repository of this tutorial can be found at <a href="'https://github.com/marlin-codes/Awesome-Hyperbolic-Graph-Representation-Learning">Awesome-Hyperbolic-Graph-Representation-Learning</a> 
+              
+<!-- In this tutorial, we will give an introduction to this emerging field in graph representation learning, with the express purpose of being accessible to all audiences. We first give a brief introduction to graph representation learning as well as some preliminary Riemannian and hyperbolic geometry. We then will comprehensively revisit the hyperbolic embedding techniques including hyperbolic shallow models and hyperbolic neural networks. In addition, we will give the technical details of the current hyperbolic graph neural networks, by unifying them into a general framework and summarizing the variants of each component. Moreover, we will introduce a series of related applications in a variety of fields. In the last part, we will discuss several advanced topics about hyperbolic geometry for graph representation learning, which potentially serve as guidelines for further flourishing the non-Euclidean graph learning community.			 -->
 		</p>
                 </div>
             </div>
@@ -127,7 +128,7 @@ In this tutorial, we will give an introduction to this emerging field in graph r
     <section id="section-syllabus" class="section-wrapper about-event">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-10">
                     <div class="section-title">
                         <h1>Syllabus</h1>
                     </div>
@@ -175,23 +176,23 @@ In this tutorial, we will give an introduction to this emerging field in graph r
 
 		
 		</ol>
-	       <div>Slides: <a href="https://github.com/HyperbolicGraphLearning/HyperbolicGraphLearning.github.io/blob/main/ECML-PKDD2022-HGRL%20Tutorial.pdf">HGRL_slids@ECML-PKDD 2022</a > </div>
+	       <!-- <div>Slides: <a href="https://github.com/HyperbolicGraphLearning/HyperbolicGraphLearning.github.io/blob/main/ECML-PKDD2022-HGRL%20Tutorial.pdf">HGRL_slids@ECML-PKDD 2022</a > </div>
 	       <div>Link to ECML-PKDD PKDD2022 official Website: 
                 <a href="https://2022.ecmlpkdd.org/index.php/tutorials-workshops/">HGRL@ECML-PKDD 2022</a > 
-	                     </div>
+	                     </div> -->
     </section>
               
-    <section id="section-organizer" class="section-wrapper team gray-bg">
+    <section id="section-organizer" class="section-wrapper presenter team gray-bg">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-10">
                     <div class="section-title">
-                        <h1>Contributors</h1>
+                        <h1>Presentors</h1>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
+            <div class="row" >
+                <div class="col-lg-2 col-md-6">
                     <figure class="thumbnail">
                         <a href="https://minzhou1900.github.io/"><img src="img/img-min-270.jpg" height="80" width="80" class="rounded" alt="Image"></a>
                         <figcaption class="caption text-center">
@@ -201,7 +202,7 @@ In this tutorial, we will give an introduction to this emerging field in graph r
                     </figure>
                 </div>
                 <!-- /.col-sm-6 -->
-                <div class="col-sm-6 col-md-3">
+                <div class="col-lg-2 col-md-6">
                     <figure class="thumbnail">
                         <a href="#"><img src="img/img-menglin-270.jpeg" height="130" width="130" class="img-responsive" alt="Image"></a>
                         <figcaption class="caption text-center">
@@ -210,36 +211,46 @@ In this tutorial, we will give an introduction to this emerging field in graph r
                         </figcaption>
                     </figure>
                 </div>
-                <!-- /.col-sm-6 -->
-                
-                
-               
-                
 
-                <div class="col-sm-6 col-md-3">
+                <div class="col-lg-2 col-md-6">
                     <figure class="thumbnail">
-                        <a href="#"><img src="img/img-lujia-270.jpg" height="200" width="200" class="img-responsive" alt="Image"></a>
+                        <a href="#"><img src="img/boxiong-270.png" height="200" width="200" class="img-responsive" alt="Image"></a>
                         <figcaption class="caption text-center">
-                            <p>Lujia Pan</p>
-                                <small>Huawei Noah's Ark Lab</small>
+                          <p>Bo Xiong</p>
+                                <small>University of Stuttgart</small>
                         </figcaption>
-                    </figure>
-                </div>
-                <!-- /.col-sm-6 -->
-		    
-	   <div class="col-sm-6 col-md-3">
-                    <figure class="thumbnail">
-                        <a href="https://www.cse.cuhk.edu.hk/people/faculty/irwin-king"><img src="img/img-irwin-king.jpg" height="200" width="200" class="img-responsive" alt="Image"></a>
-                        <figcaption class="caption text-center">
-                            <p>Irwin King </p>
-                                <small>The Chinese University of Hong Kong</small>
-                           
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- /.col-sm-6 -->
+                         </figure>
+                    </div>
 
-            </div>
+                    <div class="col-lg-2 col-md-6">
+                        <figure class="thumbnail">
+                            <a href="#"><img src="img/huixiong-270.png" height="200" width="200" class="img-responsive" alt="Image"></a>
+                            <figcaption class="caption text-center">
+                                <p>Hui Xiong</p>
+                                    <small>Hong Kong University of Science and Technology (Guangzhou) </small>
+                            </figcaption>
+                        </figure>
+                    </div>
+    
+                    <div class="col-lg-2 col-md-6">
+                            <figure class="thumbnail">
+                                <a href="https://www.cse.cuhk.edu.hk/people/faculty/irwin-king"><img src="img/img-irwin-king.jpg" height="200" width="200" class="img-responsive" alt="Image"></a>
+                                <figcaption class="caption text-center">
+                                    <p>Irwin King </p>
+                                        <small>The Chinese University of Hong Kong</small>
+                                </figcaption>
+                            </figure>
+                    </div>
+
+                </div>
+
+<!--     
+                <div class="row">
+                    
+                </div> -->
+
+
+            
             <!-- .row -->
 
             
@@ -254,12 +265,12 @@ In this tutorial, we will give an introduction to this emerging field in graph r
     <section id="section-intro" class="section-wrapper about-event">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-10 text-center">
                     <h1>Presenters’ Biography</h1>
                 </div>
             </div>
             <div class="row text-justify">
-                <div class="col-md-12">
+                <div class="col-md-10">
                    
 			<p class="large text-muted">
 			    <a href="https://minzhou1900.github.io/"><strong> Dr. Min Zhou</strong></a >  is currently a Principal Research Engineer of Huawei Noah’s ARK LAB, Shenzhen, China. She received the B.S. degree in Automation from the University of Science and Technology of China, and the Ph.D. degree from Industrial Systems Engineering and Management Department, National University of Singapore, respectively. Her interests include pattern mining and machine learning, and their applications in sequence and graph data. Her several works  were published at top conferences, including KDD, WWW, ICDE, and SIGIR. She  co-organized  the 1st Workshop on Machine Learning in Software Engineering (MLiSE) @ ECML-PKDD 2021.
@@ -269,11 +280,21 @@ In this tutorial, we will give an introduction to this emerging field in graph r
 		<p class="large text-muted">
  <a href="#"><strong>Mr. Menglin Yang</strong> </a >is currently a PhD student in the Department of Computer Science and Engineering, The Chinese University of Hong Kong (CUHK). His research interests include hyperbolic graph learning and machine learning. Besides, he also focuse on real-world applications, including recommender systems, knowledge graph, drug processing. His several works related to hyperbolic graph representation learning were published at recent top conferences, including KDD 2021, WSDM 2022, WWW 2022.
 		</p>
+
+        <p class="large text-muted">
+            <a href="#"><strong>Mr. Bo Xiong</strong> </a >is currently a PhD candidate at International Max Plank Research School for Intelligent Systems (IMPRS-IS) and a Marie Sklodowska-Curie Early Stage Researcher at Department of Computer Science, University of Stuttgart, Germany. Before that, he received the B.S. and M.S. degree from Beijing Jiaotong University, Beijing, China. His research centres on geometric representation learning on graph and relational data, including hyperbolic representation learning. His research has been published in top conferences, including NeurIPS, KDD, ACL, WWW, etc. His research received the ISWC 2022 Best Student Paper Award.
+                   </p>
+
 			<p class="large text-muted">
-			   <a href="#"> <strong>Ms. Lujia Pan</strong></a > is the expert of Huawei Noah’s Ark Lab, Shenzhen, China. She currently heads the Intelligent operation and maintenance team and is working closely with a group of researchers and engineers on different projects such as fault diagnosis, anomaly detection, prediction in ICT(information and communications technology) network. Her research interests are on various issues related to improving the performance and reliability of intelligent operation and maintenance, including representation learning, time series analysis, label denoising, and active learning. In these research areas, she has published more than 20 technical papers in journals and conferences and is the inventor of more than 40 patents. She is currently a part-time PhD student in Department of Control Systems and Engineering, Xi’an Jiaotong University. Before that she received her B.S. and M.S. degrees in information engineering from Chongqing University of Posts and Telecommunications.
+			   <a href="#"> <strong>Prof. Hui Xiong</strong></a > is the Chair Professor and Thrust Head of Artificial Intelligence Thrust, HKUST (Guangzhou). 
+                He is also  Distinguished Professor at Rutgers, the State University of New Jersey and a Distinguished Guest Professor (Grand Master Chair Professor) 
+                at the University of Science and Technology of China (USTC). Dr. Xiong's general area of research is data and knowledge engineering, 
+                with a focus on developing effective and efficient data analysis techniques for emerging data intensive applications. 
+                He was elected an ACM Distinguished Scientist in 2014, an IEEE Fellow and an AAAS Fellow in 2020. He has served regularly on the organization and program committees of numerous conferences, including as a Program Co-Chair of the Industrial and Government Track for the KDD2012, a Program Co-Chair for the IEEE ICDM2013 , a General Co-Chair for the IEEE ICDM2015, and a Program Co-Chair of the Research Track for KDD2018. 
+                Dr. Hui Xiong received his Ph.D. in Computer Science from the University of Minnesota - Twin Cities, USA, in 2005, the B.E. degree in Automation from the University of Science and Technology of China (USTC), Hefei, China, and the M.S. degree in Computer Science from the National University of Singapore (NUS), Singapore.  
 			
 			<p class="large text-muted">
-			   <a href="https://www.cse.cuhk.edu.hk/people/faculty/irwin-king"> <strong> Prof. Irwin King </strong> </a > is the Chair and Professor of Computer Science & Engineering at The Chinese University of Hong Kong. His research interests include machine learning, social computing, AI, web intelligence, data mining, and multimedia information processing. In these research areas, he has over 300 technical publications in journals and conferences. He is an Associate Editor of the Journal of Neural Networks (NN). He is an IEEE Fellow, an ACM Distinguished Member, and a Fellow of Hong Kong Institute of Engineers (HKIE). He has served as the President of the International Neural Network Society (INNS), General Co-chair of The WebConf 2020, ICONIP 2020, WSDM 2011, RecSys 2013, ACML 2015, and in various capacities in a number of top conferences and societies such as WWW, NIPS, ICML, IJCAI, AAAI, APNNS, etc. He is the recipient of the ACM CIKM2019 Test of Time Award, the ACM SIGIR 2020 Test of Time Award, and 2020 APNNS Outstanding Achievement Award for his contributions made in social computing with machine learning. In early 2010 while on leave with AT&T Labs Research, San Francisco, he taught classes as a Visiting Professor at UC Berkeley. He received his B.Sc. degree in Engineering and Applied Science from California Institute of Technology (Caltech), Pasadena and his M.Sc. and Ph.D. degree in Computer Science from the University of Southern California (USC), Los Angeles.
+			   <a href="https://www.cse.cuhk.edu.hk/people/faculty/irwin-king"> <strong>Prof. Irwin King </strong> </a > is the Chair and Professor of Computer Science & Engineering at The Chinese University of Hong Kong. His research interests include machine learning, social computing, AI, web intelligence, data mining, and multimedia information processing. In these research areas, he has over 300 technical publications in journals and conferences. He is an Associate Editor of the Journal of Neural Networks (NN). He is an IEEE Fellow, an ACM Distinguished Member, and a Fellow of Hong Kong Institute of Engineers (HKIE). He has served as the President of the International Neural Network Society (INNS), General Co-chair of The WebConf 2020, ICONIP 2020, WSDM 2011, RecSys 2013, ACML 2015, and in various capacities in a number of top conferences and societies such as WWW, NIPS, ICML, IJCAI, AAAI, APNNS, etc. He is the recipient of the ACM CIKM2019 Test of Time Award, the ACM SIGIR 2020 Test of Time Award, and 2020 APNNS Outstanding Achievement Award for his contributions made in social computing with machine learning. In early 2010 while on leave with AT&T Labs Research, San Francisco, he taught classes as a Visiting Professor at UC Berkeley. He received his B.Sc. degree in Engineering and Applied Science from California Institute of Technology (Caltech), Pasadena and his M.Sc. and Ph.D. degree in Computer Science from the University of Southern California (USC), Los Angeles.
 			</p>
 			
 			
@@ -298,7 +319,7 @@ In this tutorial, we will give an introduction to this emerging field in graph r
     <footer class="footer">
         <div class="copyright-section">
             <div class="container">
-                <div class="col-md-12">
+                <div class="col-md-10">
                     <div class="copytext text-center">Copyright &copy; By Min Zhou. All rights reserved.</div>
                 </div>
             </div>
